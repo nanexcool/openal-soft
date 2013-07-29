@@ -4,9 +4,10 @@ ANALYZE      ?= no
 ANALYZE_OUTPUT?=/dev/null
 
 include $(CLEAR_VARS)
-TARGET_ARCH_ABI  ?=armeabi-v7a
+TARGET_ARCH_ABI  ?=armeabi
 LOCAL_LDLIBS     := -llog
 LOCAL_MODULE     := openal
+LOCAL_MODULE_FILENAME := libopenal32
 LOCAL_ARM_MODE   := arm
 CLANG_VERSION    ?= 3.1
 ROOTDIR          ?= $(LOCAL_PATH)
